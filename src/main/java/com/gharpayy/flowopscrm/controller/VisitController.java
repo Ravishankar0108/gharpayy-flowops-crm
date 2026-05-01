@@ -26,4 +26,9 @@ public class VisitController {
     public Visit add(@RequestBody Visit visit) {
         return repo.save(visit);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        repo.deleteById(id);
+    }
 }
