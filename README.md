@@ -55,6 +55,10 @@ This is a **full-stack Lead Management CRM** designed for:
 
 ---
 
+Replace your broken section with this 👇
+
+---
+
 ## 📊 CRM Workflow
 
 ```mermaid
@@ -64,13 +68,6 @@ B --> C[Tour Scheduled]
 C --> D[Visited]
 D --> E[Booked]
 D --> F[Lost]
-flowchart TD
-UI[Frontend - HTML/CSS/JS]
-API[Spring Boot Backend]
-DB[(H2 Database)]
-
-UI --> API
-API --> DB
 
 flowopscrm/
 │── src/
