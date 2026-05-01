@@ -42,6 +42,49 @@ This is a **full-stack Lead Management CRM** designed for:
 ---
 
 ## ✨ Features
+## 📊 CRM Workflow
+
+```mermaid
+graph LR
+A[New Lead] --> B[Contacted]
+B --> C[Tour Scheduled]
+C --> D[Visited]
+D --> E[Booked]
+D --> F[Lost]
+```
+
+---
+
+## 📊 System Architecture
+
+```mermaid
+flowchart TD
+UI[Frontend - HTML/CSS/JS]
+API[Spring Boot Backend]
+DB[(H2 Database)]
+
+UI --> API
+API --> DB
+```
+
+---
+
+## 📂 Project Structure
+
+```
+flowopscrm/
+│── src/
+│   ├── main/
+│   │   ├── java/com/gharpayy/flowopscrm/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   ├── repository/
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   ├── application.properties
+│── Dockerfile
+│── pom.xml
+```
 
 | Feature | Description |
 |--------|------------|
@@ -55,29 +98,5 @@ This is a **full-stack Lead Management CRM** designed for:
 
 ---
 
-Replace your broken section with this 👇
-
 ---
 
-## 📊 CRM Workflow
-
-```mermaid
-graph LR
-A[New Lead] --> B[Contacted]
-B --> C[Tour Scheduled]
-C --> D[Visited]
-D --> E[Booked]
-D --> F[Lost]
-
-flowopscrm/
-│── src/
-│   ├── main/
-│   │   ├── java/com/gharpayy/flowopscrm/
-│   │   │   ├── controller/
-│   │   │   ├── model/
-│   │   │   ├── repository/
-│   │   ├── resources/
-│   │   │   ├── static/
-│   │   │   ├── application.properties
-│── Dockerfile
-│── pom.xml
