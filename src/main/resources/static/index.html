@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gharpayy FlowOps CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Gharpayy FlowOps CRM</h1>
+<p class="author">by Ravi Shankar Shukla</p>
+
+<h2>Total Leads: <span id="count">0</span></h2>
+
+<h2>Add Lead</h2>
+
+<input id="name" placeholder="Name">
+<input id="phone" placeholder="Phone">
+<input id="location" placeholder="Location">
+<input id="budget" placeholder="Budget">
+
+<select id="status">
+    <option>New</option>
+    <option>Contacted</option>
+    <option>Tour Scheduled</option>
+    <option>Booked</option>
+</select>
+
+<select id="temperature">
+    <option>Hot</option>
+    <option>Warm</option>
+    <option>Cold</option>
+</select>
+
+<input id="assignedTo" placeholder="Assigned To">
+
+<button onclick="addLead()">Add Lead</button>
+
+<h2>Leads</h2>
+<div id="leads"></div>
+
+<hr>
+
+<h2>Schedule Visit</h2>
+
+<input id="visitLead" placeholder="Lead Name">
+<input id="property" placeholder="Property Name">
+<input id="date" type="date">
+<input id="time" type="time">
+
+<button onclick="addVisit()">Schedule Visit</button>
+
+<h2>Visits</h2>
+<div id="visits"></div>
+
+<footer>
+Built by Ravi Shankar Shukla | 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
